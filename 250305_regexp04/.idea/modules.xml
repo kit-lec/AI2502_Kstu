@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/250305_regexp04.iml" filepath="$PROJECT_DIR$/.idea/250305_regexp04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K02.김지우/K02.김지우.iml" filepath="$PROJECT_DIR$/K02.김지우/K02.김지우.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K03.김충희/K03.김충희.iml" filepath="$PROJECT_DIR$/K03.김충희/K03.김충희.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K04.김현구/K04.김현구.iml" filepath="$PROJECT_DIR$/K04.김현구/K04.김현구.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K05.손범규/K05.손범규.iml" filepath="$PROJECT_DIR$/K05.손범규/K05.손범규.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K06.안주경/K06.안주경.iml" filepath="$PROJECT_DIR$/K06.안주경/K06.안주경.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K07.이경진/K07.이경진.iml" filepath="$PROJECT_DIR$/K07.이경진/K07.이경진.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K08.이현정/K08.이현정.iml" filepath="$PROJECT_DIR$/K08.이현정/K08.이현정.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K09.최재석/K09.최재석.iml" filepath="$PROJECT_DIR$/K09.최재석/K09.최재석.iml" />
+      <module fileurl="file://$PROJECT_DIR$/K10.최해훈/K10.최해훈.iml" filepath="$PROJECT_DIR$/K10.최해훈/K10.최해훈.iml" />
+    </modules>
+  </component>
+</project>
