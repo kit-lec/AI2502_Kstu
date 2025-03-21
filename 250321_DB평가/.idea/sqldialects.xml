@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/1.데이터 분석 기초 기술 활용/02.김지우.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/1.데이터 분석 기초 기술 활용/03.김충희.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/1.데이터 분석 기초 기술 활용/04.김현구.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/1.데이터 분석 기초 기술 활용/05.손범규.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/1.데이터 분석 기초 기술 활용/06.안주경.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/1.데이터 분석 기초 기술 활용/08.이현정.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/1.데이터 분석 기초 기술 활용/10.최해훈.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2.SQL응용/03.김충희.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2.SQL응용/04.김현구.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2.SQL응용/06.안주경.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2.SQL응용/08.이현정.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/2.SQL응용/10.최해훈.sql" dialect="MySQL" />
+  </component>
+</project>
