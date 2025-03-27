@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Form 만들기 과제</title>
+</head>
+<style>
+	div.inputInfo{
+		width:80%;
+		height:100%;
+		margin: 10px;
+		border: 1px solid black;
+		display: block;
+		background-color: #d3d3d3;
+		padding: 10px;
+		border: 3px solid black;
+
+	}
+	div.userInfo{
+		width:80%;
+		height:100%;
+		margin: 10px;
+		border: 1px solid black;
+		display: block;
+		background-color: #d3d3d3;
+		padding: 10px;
+		border: 3px solid black;
+	}
+	div.cardInfo{
+		width:60%;
+		height:100%;
+		margin: 10px;
+		border: 1px solid black;
+		display: block;
+		background-color: #d3d3d3;
+		padding: 10px;
+		border: 3px solid black;
+	}
+
+	span.warning{
+		font-size: 7px;
+		padding: 10px;
+
+	}
+	span{
+		font-size: 15px;
+		font-family: 바탕체;
+	}
+	input[type=text]{
+		font-size: 12px;
+
+	}
+	input[type=button]{
+		font-size: 12px;
+	}
+
+
+
+</style>
+<body>
+주문자 정보 입력
+<br>
+	<div class = "userInfo"  >
+		<form action="">
+<!--			주문자 정보-->
+			<span>주문자 정보</span>
+			<span style="font-size: 10px">비회원으로 상품 구매시 반드시 본인인증을 하여야 합니다</span>
+			<input type="button" value="휴대폰 인증" >
+			<input type="button" value="아이핀 인증" >
+			<br>
+<!--			주소-->
+			<span >주소</span> <input type="text" >
+			<input type="button" value="주소찾기" style="font-size: 10px; " >
+			<br>
+			<input type="text" style="width: 70%; text-align: right;">
+			<br>
+			<input type="text" style="width: 70%">
+			<br>
+<!--			휴대전화번호-->
+			<span >휴대전화</span>
+			<select name="phoneNumber" id="전화번호">
+				<option value="010" selected>010</option>
+				<option value="010">031</option>
+				<option value="010">011</option>
+				<option value="010">090</option>
+			</select>
+			 -
+			<input type="text" style="width: 5%; text-align: right; "> -
+			<input type="text" style="width: 5%; text-align: right; ">
+			<input type="checkbox"><span style="font-size: 10px">SMS수신동의</span>
+
+			<br>
+<!--			이메일-->
+			<span>이메일</span>
+			<input type="text">
+			@
+			<input type="text" name="" id="">
+			<select name="" id="">
+				<option value="gmail">gmail.com</option>
+				<option value="gmail">naver.com</option>
+				<option value="gmail">outlook.com</option>
+			</select>
+		</form>
+	</div>
+<span class = 'warning' style="font-size: 10px">sk플래닛(주)는 통신 판매 중계자로서 통신 판매의 당사자가 아니며, 개별판매자가 등록한 상품 정보및 거래에 대해 sk플래닛(주)는 일체의 책임을 지지 않습니다</span>
+<br>
+<br>
+
+	배송지 정보 입력
+	<div class = "inputInfo" >
+		<span>배송지선택</span>
+		<input type="button" value="주문자 정보와 동일" style="font-size: 10px; " >
+		<br>
+		<span>받으시는 분</span>
+		<input type="text">
+		<br>
+		<!--			주소-->
+		<span>주소</span>
+		<input type="text">
+		<input type="button" value="주소찾기" style="font-size: 10px; " >
+		<input type="checkbox"> <span style="font-size: 12px">배송지목록에 추가</span>
+		<br>
+		<input type="text" style="width: 70%">
+		<br>
+		<input type="text" style="width: 70%">
+		<br>
+		<br>
+		<span>배송지요구사항</span>
+		<input type="text" style="width: 70%">
+		<br>
+		<span style="font-size: 10px; color: blue" >*특정한 배송일을 지정하고자 할 경우 판매자와 연락하여 배송일을 확인해주시기 바랍니다</span>
+
+
+	</div>
+결제 정보 입력
+
+	<div class = "cardInfo">
+
+		<span>신용카드</span>
+		<input type="radio" checked>신용카드(일반)
+		<input type="radio">신용카드(법인)
+		<input type="radio">해외카드발급
+		<br>
+		<span>현급결제</span>
+		<input type="radio">무통장입금
+		<input type="radio">실시간계좌이체
+		<br>
+		<span>카드결제</span>
+		<select name="choice" id="카드선택">
+			<option value="농협">농협</option>
+			<option value="농협">우리은행</option>
+			<option value="농협">국민은행</option>
+			<option value="농협">신한은행</option>
+		</select>
+		<br>
+		<span>할부방식</span>
+		<select name="choice" id="할부방식">
+			<option value="일시불">일시불</option>
+			<option value="일시불">할부6개월</option>
+			<option value="일시불">할부3개월</option>
+		</select>
+		<br>
+		<span>결제방식</span>
+		<input type="button" value ="간편결제" style="color: red; "" >
+		<input type="button" value ="공인인증 안내">
+		<input type="button" value ="안전결제안내">
+		<input type="button" value ="안심클릭안내">
+		<input type="button" value ="해외발급카드안내">
+
+
+	</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

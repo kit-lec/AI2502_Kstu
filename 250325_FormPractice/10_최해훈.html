@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Form 만들기 과제</title>
+
+	<style>
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+		th, td {
+			/*border: 1px solid #ddd;*/
+			padding: 5px;
+			text-align: left;
+			background-color: #f4f4f4;
+		}
+		button:active {
+			color: red;
+		}
+		button:hover {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>주문자 정보 입력</h3>
+	<table>
+		<tr>
+			<th>주문자 정보</th>
+			<td colspan="2">비회원으로 상품구매 시 반드시 본인인증을 하셔야합니다.
+				<button type="button">휴대폰인증</button>
+				<button type="button">아이핀인증</button>
+			</td>
+		</tr>
+
+		<tr>
+			<th rowspan="3">주소</th>
+			<td colspan="2"><input style="background-color: #E1E1E1" type="text" readonly> <button>주소찾기</button></td>
+		</tr>
+
+		<tr>
+			<td><input style="background-color: #E1E1E1" type="text" size="70" readonly></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" size="70" placeholder="나머지 주소를 입력하세요	."></td>
+		</tr>
+
+		<tr>
+			<th>휴대전화</th>
+			<td>
+				<select>
+				<option>010</option>
+				<option>011</option>
+				<option>019</option>
+				</select> - <input type="text" size="7"> - <input type="text" size="7">
+				<input type="checkbox" checked>SMS수신동의
+			</td>
+		</tr>
+
+		<tr>
+			<th>이메일</th>
+			<td colspan="2"><input type="text" size="20">@<input type="text" size="20">
+			<select>
+				<option selected>직접입력</option>
+				<option>naver.com</option>
+				<option>naver.com</option>
+				<option>daum.net</option>
+				<option>hanmail.net</option>
+				<option>gmail.com</option>
+			</select>
+			</td>
+		</tr>
+	</table>
+	<p style="font-size: 10px">* SK플래닛㈜는 통신판매중개자로서 통신판매의 당사자가 아니며, 개별판매자가 등록한 상품정보 및 거래에 대해 SK플래닛㈜는 일체의 책임을 지지 않습니다.</p>
+
+	<h3>배송지 정보 입력</h3>
+	<table>
+		<tr>
+			<th>배송지선택</th>
+			<td colspan><button type="button">주문자 정보와 동일</button></td>
+		</tr>
+
+		<tr>
+			<th>받으시는분</th>
+			<td><input type="text"></td>
+		</tr>
+
+		<tr>
+			<th rowspan="3">주소</th>
+			<td colspan="2"><input style="background-color: #E1E1E1" type="text" readonly> <button>주소찾기</button>
+				<input type="checkbox">배송지목록에 추가</td>
+		</tr>
+
+		<tr>
+			<td><input style="background-color: #E1E1E1" type="text" size="70" readonly></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" size="70" placeholder="나머지 주소를 입력하세요."></td>
+		</tr>
+
+		<tr>
+			<th>휴대전화</th>
+			<td>
+				<select>
+					<option>010</option>
+					<option>011</option>
+					<option>019</option>
+				</select> - <input type="text" size="7"> - <input type="text" size="7">
+				<input type="checkbox" checked>안심번호 사용(무료)
+				<input type="checkbox">집전화 추가입력
+			</td>
+		</tr>
+
+		<tr>
+			<th>배송시요구사항</th>
+			<td>
+				<input type="text" size="70">(0자/50자)
+				<p style="font-size: 10px; color: blue">*특정한 배송일을 지정하고자 할 경우 판매자와 연락하여 배송일을 확인해주시기 바랍니다.</p>
+
+			</td>
+
+		</tr>
+
+	</table>
+
+
+	<h3>결제 정보 입력</h3>
+	<table>
+		<tr>
+			<th style="text-align: center">신용카드</th>
+			<td><input type="radio" name="pay" checked> 신용카드(일반)</td>
+			<td><input type="radio" name="pay"> 신용카드(법인)</td>
+			<td colspan="2"><input type="radio" name="pay"> 해외발급카드</td>
+		</tr>
+
+		<tr>
+			<th style="text-align: center">현금결제</th>
+			<td><input type="radio" name="pay"> 무통장입금</td>
+			<td colspan="3"><input type="radio" name="pay"> 실시간계좌이체</td>
+		</tr>
+
+		<tr>
+			<th style="text-align: center; background-color: #ffffff">카드선택
+				<td style="background-color: #ffffff" colspan="5">
+					<select>
+						<option selected>선택하세요</option>
+						<option>신한카드</option>
+						<option>현대카드</option>
+						<option>삼성카드</option>
+					</select>
+				</td>
+			</th>
+		</tr>
+
+		<tr>
+			<th style="text-align: center; background-color: #ffffff">할부방식
+				<td style="background-color: #ffffff" colspan="5">
+					<select>
+						<option selected>일시불</option>
+						<option>3개월(무이자)</option>
+						<option>4개월</option>
+						<option>5개월</option>
+						<option>6개월</option>
+					</select>
+				</td>
+			</th>
+		</tr>
+
+				<tr>
+					<th style="text-align: center; background-color: #ffffff">결제안내
+						<td colspan="5" style="background-color: #ffffff">
+							<button>간편결제안내</button>
+							<button>공인인증안내</button>
+							<button>안전결제안내</button>
+							<button>안심클릭안내</button>
+							<button>해외발급카드안내</button>
+						</td>
+				</tr>
+
+<!--		<tr>-->
+<!--			<th style="text-align: center; background-color: #ffffff">결제안내-->
+<!--				<td colspan="5" style="background-color: #ffffff">-->
+<!--					<button style="color:red;">간편결제안내</button>-->
+<!--					<button>공인인증안내</button>-->
+<!--					<button>안전결제안내</button>-->
+<!--					<button>안심클릭안내</button>-->
+<!--					<button>해외발급카드안내</button>-->
+<!--				</td>-->
+<!--		</tr>-->
+
+	</table>
+</body>
+</html>

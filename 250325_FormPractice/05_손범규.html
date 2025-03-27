@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 만들기 과제</title>
+    <style>
+    body {
+        font-family: arial;
+    }
+    fieldset {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .section-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    label {
+        display: inline-block;
+        width: 120px;
+        margin-top: 10px;
+        vertical-align: top;
+    }
+    input, select, textarea {
+        margin-top: 10px;
+    }
+    .input-block {
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+
+<form>
+<!--    주문자 정보 입력-->
+    <fieldset>
+        <div class = "section-title"></div>
+        <div class = "input-block">
+            <label>주문자정보</label>
+            <small>비회원으로 상품구매 시 반드시 본인인증을 하셔야 합니다.</small>
+            <button type="button">휴대폰인증</button>
+            <button type="button">아이핀인증</button>
+        </div>
+        <div class = "input-block">
+            <label>주소</label>
+            <input type="text" size="20" readonly>
+            <button type="button">주소찾기</button>
+            <br>
+            <input type="text" size="80">
+        </div>
+
+        <div class = "input-block">
+            <label>휴대전화</label>
+            <select>
+                <option>010</option>
+                <option>011</option>
+                <option>016</option>
+            </select> -
+            <input type="text" size="4"> -
+            <input type="text" size="4">
+            <label><input type="checkbox" checked>SMS 수신동의</label>
+        </div>
+
+        <div class = "input-block">
+            <label>이메일</label>
+            <input type="text">@<input type="text">
+            <select>
+                <option>직접입력</option>
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>hanmail.net</option>
+            </select>
+        </div>
+        <small>
+            * SK플래닛㈜은 통신판매중개자로서 통신판매의 당사자가 아니며, 개별판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
+        </small>
+    </fieldset>
+
+<!--    배송지 정보 입력-->
+    <fieldset>
+        <div class="section-title">배송지 정보 입력
+            <button type="button">주문자 정보와 동일</button></div>
+        <div class="input-block">
+            <label>받으시는 분</label>
+            <input type="text">
+        </div>
+
+        <div class="input-block">
+            <label>주소</label>
+            <input type="text" size="20">
+            <button type="button">주소찾기</button>
+            <label><input type="checkbox">배송지목록에 추가</label><br>
+            <input type="text" size="80"><br>
+            <input type="text" size="80">
+        </div>
+
+        <div class="input-block">
+            <label>휴대전화</label>
+            <select>
+                <option>010</option>
+            </select> -
+            <input type="text" size="4"> -
+            <input type="text" size="4">
+            <label><input type="checkbox" checked>안심번호 사용(무료)</label>
+            <label><input type="checkbox">집전화 추가 입력</label>
+        </div>
+
+        <div class="input-block">
+            <label>배송시 요청사항</label>
+            <textarea cols="60" rows="2" maxlength="50"></textarea>
+        </div>
+
+        <small>
+            * 특정한 배송일을 지정하고자 할 경우 판매자와 연락하여 배송일을 확인해주시기 바랍니다.
+        </small>
+    </fieldset>
+    </form>
+<fieldset>
+    <legend>
+        <strong>
+            결제 정보 입력
+        </strong>
+    </legend>
+    <div class="input-block">
+        <label>
+            <strong>
+                신용카드
+            </strong>
+        </label>
+        <input type="radio" name="cardType" checked> 신용카드(일반)
+        <input type="radio" name="cardType" checked> 신용카드(법인)
+        <input type="radio" name="cardType" checked> 해외발급카드
+    </div>
+
+    <div class="input-block">
+        <label>
+            <strong>
+                현금결제
+            </strong>
+        </label>
+        <input type="radio" name="cashType"> 무통장입금
+        <input type="radio" name="cashType"> 실시간계좌이체
+    </div>
+
+<!--    카드 선택-->
+    <div class="input-block">
+        <label>
+            카드 선택
+        </label>
+        <select>
+            <option>선택하세요</option>
+            <option>국민카드</option>
+            <option>신한카드</option>
+            <option>현대카드</option>
+            <option>삼성카드</option>
+            <option>롯데카드</option>
+            <option>비씨카드</option>
+        </select>
+    </div>
+
+<!--할부방식-->
+    <div class="input-block">
+        <label>할부방식</label>
+        <select>
+            <option>일시불</option>
+            <option>2개월</option>
+            <option>3개월</option>
+            <option>6개월</option>
+            <option>12개월</option>
+        </select>
+    </div>
+
+<!--결제안내버튼-->
+    <div class="input-block" style="margin-top: 10px">
+        <button type="button" style="color: red;">간편결제안내</button>
+        <button type="button">공인인증안내</button>
+        <button type="button">안전결제안내</button>
+        <button type="button">안심클릭안내</button>
+        <button type="button">해외발급카드안내</button>
+    </div>
+</fieldset>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

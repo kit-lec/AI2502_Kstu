@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 만들기 과제</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+            width: 150px;
+        }
+    </style>
+</head>
+
+
+<body>
+<h2>주문자 정보 입력</h2>
+<table>
+
+    <tr>
+        <th>주문자정보</th>
+        <td>
+            <input type="text" name="nick" value="비회원으로 상품구매 시 반드시 본인인증을 하셔야 합니다." disabled style="width: 350px;">
+            <button type="button">휴대폰인증</button>
+            <button type="button">아이핀인증</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>주소</th>
+        <td>
+            <input type="text" name="adress">
+            <button type="button">주소찾기</button>
+            <br>
+            <input type="text" name="adress1" style="width: 600px;"><br>
+            <input type="text" name="adress2" style="width: 600px;">
+        </td>
+    </tr>
+
+    <tr>
+        <th>휴대전화</th>
+        <td>
+            <select name="phone" id="">
+                <option value="010" selected>010</option>
+                <option value="011">011</option>
+                <option value="031">031</option>
+            </select> -
+            <input type="text" name="phone1" style="width: 80px;"> -
+            <input type="text" name="phone2" style="width: 80px;">
+            <input type="checkbox" name="agree" checked> SMS수신동의
+        </td>
+    </tr>
+
+    <tr>
+        <th>이메일</th>
+        <td>
+            <input type="text" name="email" style="width: 200px;"> @
+            <input type="text" name="email1" style="width: 200px;">
+            <select name="email2">
+                <option value="op1" selected>직접입력</option>
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<br><br>
+<h2>배송지 정보 입력</h2>
+<table>
+    <tr>
+        <th>배송지선택</th>
+        <td>
+            <button type="button">주문자 정보와 동일</button>
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <th>받으시는분</th>
+        <td>
+            <input type="text" name="name" style="width: 200px;">
+        </td>
+    </tr>
+    <th>주소</th>
+    <td>
+        <input type="text" name="adress">
+        <button type="button">주소찾기</button>
+        <input type="checkbox" name="same" checked> 배송지목록에 추가
+        <br>
+        <input type="text" name="adress1" style="width: 600px;"><br>
+        <input type="text" name="adress2" style="width: 600px;">
+    </td>
+    <tr>
+        <th>휴대전화</th>
+        <td>
+            <select name="phone">
+                <option value="010" selected>010</option>
+                <option value="011">011</option>
+                <option value="031">031</option>
+            </select> -
+            <input type="text" name="phone1" style="width: 80px;"> -
+            <input type="text" name="phone2" style="width: 80px;">
+            <input type="checkbox" name="safe" checked> 안심번호 사용(무료)
+            <input type="checkbox" name="plus" checked> 집전화 추가 입력
+        </td>
+    </tr>
+
+    <tr>
+        <th>배송요구사항</th>
+        <td>
+            <input type="text" name="needs" style="width: 600px;"> (0자/50자)
+        </td>
+    </tr>
+</table>
+<br>
+
+<h2>결제 정보 입력</h2>
+<table>
+    <tr>
+        <th>신용카드</th>
+        <td>
+            <input type="radio" name="pay" checked> 신용카드(일반)
+            <input type="radio" name="pay"> 신용카드(법인)
+            <input type="radio" name="pay"> 해외발급카드
+        </td>
+    </tr>
+
+    <tr>
+        <th>현금결제</th>
+        <td>
+            <input type="radio" name="pay bill"> 무통장입금
+            <input type="radio" name="pay bill"> 실시간계좌이체
+        </td>
+    </tr>
+
+    <tr>
+        <th>카드선택</th>
+        <td>
+            <select name="card">
+                <option value="choice" selected>선택하세요</option>
+                <option value="choice">현대카드</option>
+                <option value="choice">국민카드</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th>할부방식</th>
+        <td>
+            <select name="monthly">
+                <option value="choice1" selected>일시불</option>
+                <option value="choice1">6개월 할부</option>
+                <option value="choice1">12개월 할부</option>
+                <option value="choice1">24개월 할부</option>
+                <option value="choice1">500000개월 할부</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th>결제안내</th>
+        <td>
+            <button type="button">간편결제안내</button>
+            <button type="button">공인인증안내</button>
+            <button type="button">안전결제안내</button>
+            <button type="button">안심클릭안내</button>
+            <button type="button">해외발급카드안내</button>
+        </td>
+    </tr>
+
+
+
+
+
+
+</table>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
